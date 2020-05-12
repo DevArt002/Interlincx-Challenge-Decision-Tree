@@ -12,8 +12,6 @@ app.use(bodyParser.json());
 // Connect routes
 app.use('/', routes);
 
-const server = app.listen(port, () =>
-  console.log(`Hello world app listening on port ${port}!`)
-);
+const server = app.listen(port);
 
 module.exports = server;
